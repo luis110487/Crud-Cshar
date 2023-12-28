@@ -15,8 +15,34 @@ namespace CRUD_Sol.Logic
 
         private Conection()
         {
-            DataBase = "";
+            DataBase = "./Db_Crud.db";
         }
 
+
+        public SQLiteConnection CreateConection() 
+        {
+            SQLiteConnection Chain= new SQLiteConnection();
+
+            try
+            {
+                Chain.ConnectionString = "Data Source=" + this.DataBase;
+            }
+            catch (Exception ex)
+            {
+                Chain = null;
+                throw ex;
+            }
+
+            return Chain;   
+        }
+
+        public static Conection GetConection()
+        {
+            if (Con == null)
+            {
+                Con = new Conection();
+            }
+            return Con;
+        }
     }
 }
