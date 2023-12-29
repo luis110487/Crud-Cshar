@@ -35,6 +35,7 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
@@ -51,7 +52,6 @@
             this.btnCategory = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dtv_List)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,6 +110,17 @@
             this.btnNew.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnNew.UseVisualStyleBackColor = false;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "actualizar-datos.png");
+            this.imageList1.Images.SetKeyName(1, "agregar-archivo.png");
+            this.imageList1.Images.SetKeyName(2, "cerrar-sesion.png");
+            this.imageList1.Images.SetKeyName(3, "eliminar.png");
+            this.imageList1.Images.SetKeyName(4, "grafico.png");
+            this.imageList1.Images.SetKeyName(5, "informacion.png");
             // 
             // btnUpdate
             // 
@@ -276,6 +287,7 @@
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Visible = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -288,17 +300,6 @@
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Visible = false;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "actualizar-datos.png");
-            this.imageList1.Images.SetKeyName(1, "agregar-archivo.png");
-            this.imageList1.Images.SetKeyName(2, "cerrar-sesion.png");
-            this.imageList1.Images.SetKeyName(3, "eliminar.png");
-            this.imageList1.Images.SetKeyName(4, "grafico.png");
-            this.imageList1.Images.SetKeyName(5, "informacion.png");
             // 
             // Articles
             // 
