@@ -72,6 +72,8 @@
       <DependentUpon>Articles.cs</DependentUpon>
     </Compile>
     <Compile Include="Logic\Conection.cs" />
+    <Compile Include="Logic\L_Articles.cs" />
+    <Compile Include="Models\M_Articles.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Articles.resx">

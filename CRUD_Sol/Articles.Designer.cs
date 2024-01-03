@@ -134,6 +134,7 @@
             this.btnUpdate.Text = "Update";
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -173,6 +174,7 @@
             this.btnClose.Text = "Closes";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label2
             // 
@@ -331,6 +333,7 @@
             this.Name = "Articles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Articles";
+            this.Load += new System.EventHandler(this.Articles_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtv_List)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
